@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos_contacto.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <title>Titulo de la pagina web</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="titulo">Automatizaciones Manero</h1>
+        </header>
+        <div class="contenedor-navegacion">
+            <nav class="contenedor navegador">
+                <a href="main.html">Inicio</a>
+                <a href="main.html">Soluciones Automatizadas</a>
+                <a href="main.html">Productos</a>
+                <a href="main.html">Contacto</a>
+            </nav>
+        </div>
+    <div class="caja">
+        <form action="">
+
+            <h2>Contacta con nosotros</h2>
+            <p>Rellena el siguiente apartado para obtener mas información sobre nuestros productos y servicios. Te contestaremos con la mayor brevedad posible.</p>
+            <fieldset>
+                <legend>Datos personales</legend>
+            
+                <div class="for-box1">
+                    <label for="nombre">Nombre </label>
+                    <input type="text" name="nombre" id="nombre">
+                    <label for="1apellido">1ºApellido </label>
+                    <input type="text" name="1apellido" id="1apellido">
+                    <label for="2apellido">2ºApellido </label>
+                    <input type="text" name="2apellido" id="2apellido">
+                </div>
+                
+                <div class="for-box2">
+                    <label for="genero">Genero</label>
+                    <div class="radio-group">
+                        <input type="radio" name="genero" value="hombre"> Hombre
+                        <input type="radio" name="genero" value="mujer"> Mujer
+                        <input type="radio" name="genero" value="otro"> Otro
+                    </div>
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Datos de contacto</legend>
+                <div class="for-box4">
+                    <div class="grupo1">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                        <label for="telefono">Telefono</label>
+                        <select id="seleccion" name="opcion">
+                            <option value="opcion1">+34</option>
+                            <option value="opcion2">+32</option>
+                            <option value="opcion3">+30</option>
+                            <option value="opcion4">+28</option>
+                        </select>
+                        <input type="tel" name="telefono" id="telefono">
+                    </div>
+                    <div class="grupo2">
+                        <label for="horario">Horario de contacto</label>
+                        <select name="selec-hora" id="hora">
+                            <option value="opcion">Mañana(08:00-13:00)</option>
+                            <option value="opcion">Tarde(16:00-20:00)</option>
+                        </select>
+                    </div>
+
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Información solicitada</legend>
+                <div class="for-box5">
+                    <div class="grup1">
+                        <label for="informacion">¿Sobre que quieres la informacion?</label>
+                        <input type="checkbox" name="producto" value="producto">Productos
+                        <input type="checkbox" name="automatizadas" value="automatizadas"> Soluciones automatizadas
+                    </div>
+                    <div class="grup2">
+                        <label for="info-extra">Escriba aqui sus cuestiones</label>
+                        <textarea name="textarea" rows="10" cols="50">Tu mensaje</textarea>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="contenedor-boton">
+                <button type="submit" class="boton-enviar">Enviar</button>
+            </div>
+            
+
+        </form>
+    </div>
+
+    </body>
+    <footer>
+        <div class="container-footer">
+            <div class="box-footer">
+                <div class="logo">
+                    <img src="images/logo-removebg-preview.png" alt="">
+                </div>
+            </div>
+            <div class="box-footer">
+                <h2 id="h2-opciones">Opciones</h2>
+                <a href="https://www.google.com">   Inicio</a>
+                <a href="#">Soluciones automatizadas</a>
+                <a href="#">Productos</a>
+                <a href="#">Contacto</a>
+            </div>
+
+            <div class="box-footer">
+                <h2>Compañia</h2>
+                <a href="#">Acerca de</a>
+                <a href="#">Terminos de uso</a>
+                <a href="#">Terminos legales</a>
+                <a href="#">Servicios</a>              
+            </div>
+
+            <div class="box-footer">
+                <h2>Redes Sociales</h2>
+                <div class="contenedor-logo-link">
+                    <a href="https://www.facebook.com/">
+                        <img src="images/facebook_3128208.png"alt="" id="logo-fotter">
+                        <a href="https://www.facebook.com/"> Facebook</a>
+                    </a>
+                </div>
+                <div class="contenedor-logo-link">
+                    <a href="https://twitter.com/">
+                        <img src="images/twitter_2111738.png"alt="" id="logo-fotter">
+                        <a href="https://twitter.com/"> Twitter</a>
+                    </a>
+                </div>
+                <div class="contenedor-logo-link">
+                    <a href="https://www.linkedin.com/">
+                        <img src="images/icons8-linkedin-50.png"alt="" id="logo-fotter">
+                        <a href="https://www.linkedin.com/"> Linkedin</a>
+                    </a>
+                </div>
+                <div class="contenedor-logo-link">
+                    <a href="https://www.instagram.com/">
+                        <img src="images/instagram_3670274.png"alt="" id="logo-fotter">
+                        <a href="https://www.instagram.com/"> Instagram</a>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box-copyright">
+            <hr>
+            <p>Todos los derechos reservados © 2024 <b>Automatizaciones Manero</b></p>
+        </div>
+    </footer>
+
+</html>

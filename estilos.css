@@ -1,0 +1,257 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /*1 rem son 10pixels*/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+/* GLOBALES */
+body {
+    font-family: "Times New Roman", sans-serif;
+    font-size: 1.6rem;
+    /*background: #d4e3fff3;*/
+    background-color: #F7FEF5;
+
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Playfair Display", serif;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+h2 {
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: 4rem;
+    }
+}
+
+h3 {
+    font-size: 2.4rem;
+    margin: 0 0 0.5px 0;
+}
+
+@media (min-width: 768px) {
+    h3 {
+        font-size: 3rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #000
+}
+
+.contenedor {
+    max-width: 130rem;
+    margin-inline: auto;
+}
+
+/* NAV */
+.hero {
+    background-image: url('/imag/automatizacion'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 55rem;
+}
+
+.header {
+    text-align: center;
+    color: #333;
+}
+.titulo {
+    font-size: 5rem;
+    margin: 10;
+    padding: 20px;
+   /* background-color: #3498db;*/
+    background-color: #C3D6E4;
+    color: #fff;
+    border-radius: 50px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navegador {
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contenedor-navegacion {
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+}
+.navegador a{
+    text-align: center;
+    display: block;
+    padding: 2rem;
+    font-size: 2rem;
+    transition: background-color .3s ease-out;
+}
+.navegador a:hover{
+   /* background-color: #037bc0;*/
+    background-color: #A9F497;
+    color: white;
+    border-bottom-right-radius: 1rem;
+}
+/* NUESTROS VALORES */
+.nuestros-valores {
+    display: flex;
+    height: 50rem;
+    margin-top: 5rem;
+}
+.contenedor-cartas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+.value-card {
+    width: 100%;
+    margin: 20px;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    flex-direction: row;
+}
+
+.value-card:hover {
+    transform: scale(1.05);
+}
+
+.value-card::before {
+    content: "";
+    display: block;
+    padding-top: 75%; /* Aspect ratio 4:3 */
+}
+
+.value-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.value-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.value-card:hover .value-content {
+    opacity: 1;
+}
+
+.value-content p {
+    margin: 0;
+    color: #333;
+}
+
+/* Imágenes de fondo */
+.value-card:nth-child(1) {
+    background-image: url('descarga.png');
+}
+
+.value-card:nth-child(2) {
+    background-image: url('descarga.png');
+}
+
+.value-card:nth-child(3) {
+    background-image: url('imagen3.jpg');
+}
+/* SOBRE NOSOSTROS*/
+.sobre-nosotros {
+    display: flex;
+    height: 60rem;
+    margin-top: 10rem;
+
+}
+
+.box1 {
+    background-image: url(descarga.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem;
+    flex-basis: 60%;
+    height: 100%;
+}
+
+.box2 {
+    background-color: #617CEE;
+    color: white;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
+    flex-basis: 50%;
+    height: 100%;
+    
+}
+/* NUESTRAS INTALACIONES*/
+.nuestras-instalaciones {
+    display: flex;
+    height: 60rem;
+    margin-top: 10rem;
+
+
+}
+
+.box2-2 {
+    background-image: url(descarga.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem;
+    flex-basis: 60%;
+    height: 100%;
+}
+
+.box1-1 {
+    background-color: #617CEE;
+    color: white;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
+    flex-basis: 50%;
+    height: 100%;
+    
+}
