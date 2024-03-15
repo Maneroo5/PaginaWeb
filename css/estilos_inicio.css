@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
-    font-size: 62.5%;/*1 rem son 10pixels, utilizamos rem como medida */
+    font-size: 62.5%;
+    /*1 rem son 10pixels, utilizamos rem como medida */
 }
 
 *,
@@ -8,6 +9,7 @@ html {
 *:after {
     box-sizing: inherit;
 }
+
 /* VARIABLES GLOBALES */
 body {
     font-family: "Times New Roman", sans-serif;
@@ -31,10 +33,12 @@ h3 {
 h1 {
     font-size: 5rem;
 }
+
 h2 {
     text-align: center;
     font-size: 4rem;
 }
+
 h3 {
     font-size: 3rem;
 }
@@ -45,18 +49,21 @@ h3 {
         font-size: 4rem;
     }
 }
+
 @media (max-width: 768px) {
     h2 {
         font-size: 3.1rem;
         text-align: center;
     }
 }
+
 @media (max-width: 768px) {
     h3 {
         font-size: 2.5rem;
         margin: 0 0 0.5px 0;
     }
 }
+
 a {
     /* estilo predetermonado para los enlaces*/
     text-decoration: none;
@@ -72,149 +79,223 @@ a {
 /* NAV */
 .hero {
     /* Estilo para el héroe */
-    margin-top: 2rem; /* Margen superior de 2rem */
-    background-image: url('/images/automatizacion.webp'); /* Establece la imagen de fondo */
-    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
-    background-size: cover; /* Escala la imagen de fondo para cubrir completamente */
-    background-position: center center; /* Posiciona la imagen de fondo en el centro */
-    height: 55rem; /* Altura de 55rem */
+    margin-top: 2rem;
+    /* Margen superior de 2rem */
+    background-image: url('/images/automatizacion.webp');
+    /* Establece la imagen de fondo */
+    background-repeat: no-repeat;
+    /* Evita que la imagen de fondo se repita */
+    background-size: cover;
+    /* Escala la imagen de fondo para cubrir completamente */
+    background-position: center center;
+    /* Posiciona la imagen de fondo en el centro */
+    height: 55rem;
+    /* Altura de 55rem */
 }
+
 .header {
     /* Estilo para el encabezado */
-    text-align: center; /* Alinea el texto al centro */
-    color: #333; /* Color del texto */
+    text-align: center;
+    /* Alinea el texto al centro */
+    color: #333;
+    /* Color del texto */
 }
 
 .titulo {
     /* Estilo para el título */
-    font-size: 5rem; /* Tamaño de fuente de 5rem */
-    margin: 10; /* Margen de 10 (unidad no especificada, generalmente se utiliza px) */
-    padding: 2rem; /* Espaciado interno de 2rem */
-    background-color: #C3D6E4; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    border-radius: 5rem; /* Borde redondeado de 5rem */
-    display: inline-block; /* Muestra el título como un bloque en línea */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra */
+    font-size: 5rem;
+    /* Tamaño de fuente de 5rem */
+    margin: 10;
+    /* Margen de 10 (unidad no especificada, generalmente se utiliza px) */
+    padding: 2rem;
+    /* Espaciado interno de 2rem */
+    background-color: #C3D6E4;
+    /* Color de fondo */
+    color: #fff;
+    /* Color del texto */
+    border-radius: 5rem;
+    /* Borde redondeado de 5rem */
+    display: inline-block;
+    /* Muestra el título como un bloque en línea */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Agrega una sombra */
 }
 
 .navegador {
     /* Estilo para el navegador */
-    padding: 2rem 0 2rem 0; /* Espaciado interno */
-    display: flex; /* Establece el navegador como un flexbox */
-    align-items: center; /* Alinea los elementos al centro verticalmente */
-    flex-direction: row; /* Establece la dirección de los elementos como fila */
-    justify-content: space-between; /* Distribuye los elementos de manera uniforme en el contenedor */
+    padding: 2rem 0 2rem 0;
+    /* Espaciado interno */
+    display: flex;
+    /* Establece el navegador como un flexbox */
+    align-items: center;
+    /* Alinea los elementos al centro verticalmente */
+    flex-direction: row;
+    /* Establece la dirección de los elementos como fila */
+    justify-content: space-between;
+    /* Distribuye los elementos de manera uniforme en el contenedor */
 }
+
 @media (max-width: 768px) {
     .navegador {
         /* Estilo para el navegador */
-        padding: 2rem 0 2rem 0; /* Espaciado interno */
-        display: flex; /* Establece el navegador como un flexbox */
-        align-items: center; /* Alinea los elementos al centro verticalmente */
-        flex-direction: column; /* Establece la dirección de los elementos como fila */
-        justify-content: space-between; /* Distribuye los elementos de manera uniforme en el contenedor */
+        padding: 2rem 0 2rem 0;
+        /* Espaciado interno */
+        display: flex;
+        /* Establece el navegador como un flexbox */
+        align-items: center;
+        /* Alinea los elementos al centro verticalmente */
+        flex-direction: column;
+        /* Establece la dirección de los elementos como fila */
+        justify-content: space-between;
+        /* Distribuye los elementos de manera uniforme en el contenedor */
     }
 
 }
 
 .contenedor-navegacion {
     /* Estilo para el contenedor de navegación */
-    border-top: 1px solid #e1e1e1; /* Borde superior de 1px sólido */
-    border-bottom: 1px solid #e1e1e1; /* Borde inferior de 1px sólido */
+    border-top: 1px solid #e1e1e1;
+    /* Borde superior de 1px sólido */
+    border-bottom: 1px solid #e1e1e1;
+    /* Borde inferior de 1px sólido */
 }
 
-.navegador a{
+.navegador a {
     /* Estilo para los enlaces dentro del navegador */
-    text-align: center; /* Alinea el texto al centro */
-    display: block; /* Muestra los enlaces como bloques */
-    padding: 2rem; /* Espaciado interno de 2rem */
-    font-size: 2rem; /* Tamaño de fuente de 2rem */
-    transition: background-color .3s ease-out; /* Transición suave de 0.3 segundos en el color de fondo */
-    border-radius: 2rem; /* Borde redondeado de 2rem */
+    text-align: center;
+    /* Alinea el texto al centro */
+    display: block;
+    /* Muestra los enlaces como bloques */
+    padding: 2rem;
+    /* Espaciado interno de 2rem */
+    font-size: 2rem;
+    /* Tamaño de fuente de 2rem */
+    transition: background-color .3s ease-out;
+    /* Transición suave de 0.3 segundos en el color de fondo */
+    border-radius: 2rem;
+    /* Borde redondeado de 2rem */
 }
 
-.navegador a:hover{
+.navegador a:hover {
     /* Estilo para los enlaces cuando se hace hover sobre ellos */
-    background-color: #C3D6E4; /* Cambia el color de fondo */
-    color: white; /* Cambia el color del texto */
-    border-radius: 2rem; /* Mantiene el borde redondeado de 2rem */
-} 
+    background-color: #C3D6E4;
+    /* Cambia el color de fondo */
+    color: white;
+    /* Cambia el color del texto */
+    border-radius: 2rem;
+    /* Mantiene el borde redondeado de 2rem */
+}
+
 /* NUESTROS VALORES */
 .nuestros-valores {
     /* Estilo para el contenedor de valores */
     /* La siguiente línea está comentada: display: flex; */
-    height: 50rem; /* Establece una altura de 50rem */
-    margin-top: 5rem; /* Establece un margen superior de 5rem */
+    height: 50rem;
+    /* Establece una altura de 50rem */
+    margin-top: 5rem;
+    /* Establece un margen superior de 5rem */
 }
 
-.contenedor-cartas{
+.contenedor-cartas {
     /* Estilo para el contenedor de las cartas */
-    display: flex; /* Establece el contenedor como un flexbox */
-    flex-direction: row; /* Establece la dirección de los elementos como fila */
-    gap: 2rem; /* Establece un espacio entre elementos de 2rem */
+    display: flex;
+    /* Establece el contenedor como un flexbox */
+    flex-direction: row;
+    /* Establece la dirección de los elementos como fila */
+    gap: 2rem;
+    /* Establece un espacio entre elementos de 2rem */
 }
-@media (max-width:768px){
-    .contenedor-cartas{
+
+@media (max-width:768px) {
+    .contenedor-cartas {
         flex-direction: column;
     }
 
-    .nuestros-valores{
+    .nuestros-valores {
         height: 200rem;
     }
 }
 
 .value-card {
     /* Estilo para las tarjetas de valores */
-    width: 100%; /* Ancho del 100% del contenedor padre */
-    margin: 2rem; /* Margen exterior de 2rem */
-    background-size: cover; /* Ajusta la imagen de fondo para cubrir completamente */
-    position: relative; /* Establece posición relativa para posicionamiento absoluto de hijos */
-    overflow: hidden; /* Oculta el desbordamiento de los elementos hijos */
-    border-radius: 8px; /* Establece un borde redondeado de 8px */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra */
-    transition: transform 0.3s; /* Transición suave de 0.3 segundos en la propiedad transform */
-    flex-direction: row; /* Establece la dirección de los elementos hijos como fila */
+    width: 100%;
+    /* Ancho del 100% del contenedor padre */
+    margin: 2rem;
+    /* Margen exterior de 2rem */
+    background-size: cover;
+    /* Ajusta la imagen de fondo para cubrir completamente */
+    position: relative;
+    /* Establece posición relativa para posicionamiento absoluto de hijos */
+    overflow: hidden;
+    /* Oculta el desbordamiento de los elementos hijos */
+    border-radius: 8px;
+    /* Establece un borde redondeado de 8px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Agrega una sombra */
+    transition: transform 0.3s;
+    /* Transición suave de 0.3 segundos en la propiedad transform */
+    flex-direction: row;
+    /* Establece la dirección de los elementos hijos como fila */
 }
+
 .value-card:hover {
     /* Estilo para cuando se hace hover sobre la tarjeta */
-    transform: scale(1.05); /* Escala la tarjeta al 105% de su tamaño original */
+    transform: scale(1.05);
+    /* Escala la tarjeta al 105% de su tamaño original */
 }
 
 .value-card::before {
     /* Estilo para el seudoelemento ::before */
-    content: ""; /* Agrega un contenido vacío */
-    display: block; /* Convierte el seudoelemento en un elemento de bloque */
-    padding-top: 75%; /* Proporción para mantener el aspecto de relación 4:3 */
+    content: "";
+    /* Agrega un contenido vacío */
+    display: block;
+    /* Convierte el seudoelemento en un elemento de bloque */
+    padding-top: 75%;
+    /* Proporción para mantener el aspecto de relación 4:3 */
 }
 
 .value-card img {
     /* Estilo para la imagen dentro de la tarjeta */
-    position: absolute; /* Establece posición absoluta para la imagen */
-    top: 0; /* Coloca la imagen en la parte superior de su contenedor */
-    left: 0; /* Coloca la imagen en la parte izquierda de su contenedor */
-    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
-    height: 100%; /* Establece la altura de la imagen al 100% del contenedor */
-    object-fit: cover; /* Escala la imagen para cubrir todo el contenedor manteniendo su relación de aspecto */
+    position: absolute;
+    /* Establece posición absoluta para la imagen */
+    top: 0;
+    /* Coloca la imagen en la parte superior de su contenedor */
+    left: 0;
+    /* Coloca la imagen en la parte izquierda de su contenedor */
+    width: 100%;
+    /* Establece el ancho de la imagen al 100% del contenedor */
+    height: 100%;
+    /* Establece la altura de la imagen al 100% del contenedor */
+    object-fit: cover;
+    /* Escala la imagen para cubrir todo el contenedor manteniendo su relación de aspecto */
 }
 
 .value-content {
     /* Estilo para el contenido de los valores */
-    text-align: center; /* Alinea el texto al centro */
-    background-color: rgba(149, 190, 250, 0.8); /* Color de fondo con transparencia */
-    padding: 2rem; /* Espaciado interno de 2rem */
-    opacity: 0; /* Hace el contenido inicialmente invisible */
-    transition: opacity 0.3s; /* Transición suave de 0.3 segundos para la propiedad opacidad */
+    text-align: center;
+    /* Alinea el texto al centro */
+    background-color: rgba(149, 190, 250, 0.8);
+    /* Color de fondo con transparencia */
+    padding: 2rem;
+    /* Espaciado interno de 2rem */
+    opacity: 0;
+    /* Hace el contenido inicialmente invisible */
+    transition: opacity 0.3s;
+    /* Transición suave de 0.3 segundos para la propiedad opacidad */
 }
 
 .value-card:hover .value-content {
     /* Estilo para el contenido cuando se hace hover sobre la tarjeta */
-    opacity: 1; /* Hace el contenido visible */
+    opacity: 1;
+    /* Hace el contenido visible */
 }
 
 .value-content p {
     /* Estilo para los párrafos dentro del contenido */
-    margin: 0; /* Elimina el margen de los párrafos */
-    color: #333; /* Establece el color del texto */
+    margin: 0;
+    /* Elimina el margen de los párrafos */
+    color: #333;
+    /* Establece el color del texto */
 }
 
 /* Imágenes de fondo */
@@ -237,80 +318,123 @@ a {
     background-position: center;
 
 }
+
 /* SOBRE NOSOSTROS*/
 .sobre-nosotros {
     /* Estilo para el contenedor principal de la sección "Sobre Nosotros" */
-    display: flex; /* Establece el contenedor como un flexbox */
-    height: 60rem; /* Establece una altura fija de 60rem */
-    margin-top: 10rem; /* Establece un margen superior de 10rem */
+    display: flex;
+    /* Establece el contenedor como un flexbox */
+    height: 60rem;
+    /* Establece una altura fija de 60rem */
+    margin-top: 10rem;
+    /* Establece un margen superior de 10rem */
 }
 
 .box1 {
     /* Estilo para la primera caja dentro de la sección */
-    background-image: url(/images/quienessomos.jpg); /* Establece una imagen de fondo */
-    background-position: left center; /* Posición de la imagen de fondo */
-    background-repeat: no-repeat; /* No se repite la imagen de fondo */
-    background-size: cover; /* Ajusta la imagen de fondo para cubrir completamente */
-    height: 25rem; /* Altura fija de la caja */
-    flex-basis: 60%; /* Establece el tamaño base flexible al 60% del contenedor */
-    height: 100%; /* Establece una altura del 100% (repetida, se podría eliminar) */
+    background-image: url(/images/quienessomos.jpg);
+    /* Establece una imagen de fondo */
+    background-position: left center;
+    /* Posición de la imagen de fondo */
+    background-repeat: no-repeat;
+    /* No se repite la imagen de fondo */
+    background-size: cover;
+    /* Ajusta la imagen de fondo para cubrir completamente */
+    height: 25rem;
+    /* Altura fija de la caja */
+    flex-basis: 60%;
+    /* Establece el tamaño base flexible al 60% del contenedor */
+    height: 100%;
+    /* Establece una altura del 100% (repetida, se podría eliminar) */
 }
 
 .box2 {
     /* Estilo para la segunda caja dentro de la sección */
-    background-color: #C3D6E4; /* Color de fondo */
-    color: black; /* Color del texto */
-    text-align: justify; /* Alinea el texto justificado */
-    display: flex; /* Establece la caja como un flexbox */
-    flex-direction: column; /* Establece la dirección de los elementos hijos como columna */
-    justify-content: center; /* Centra verticalmente el contenido */
-    padding: 4rem; /* Espaciado interno de 4rem en todos los lados */
-    flex-basis: 50%; /* Establece el tamaño base flexible al 50% del contenedor */
-    height: 100%; /* Establece una altura del 100% (repetida, se podría eliminar) */
+    background-color: #C3D6E4;
+    /* Color de fondo */
+    color: black;
+    /* Color del texto */
+    text-align: justify;
+    /* Alinea el texto justificado */
+    display: flex;
+    /* Establece la caja como un flexbox */
+    flex-direction: column;
+    /* Establece la dirección de los elementos hijos como columna */
+    justify-content: center;
+    /* Centra verticalmente el contenido */
+    padding: 4rem;
+    /* Espaciado interno de 4rem en todos los lados */
+    flex-basis: 50%;
+    /* Establece el tamaño base flexible al 50% del contenedor */
+    height: 100%;
+    /* Establece una altura del 100% (repetida, se podría eliminar) */
 }
+
 /* estilo especial para moviles*/
 @media (max-width: 768px) {
-.sobre-nosotros{
-    flex-direction: column-reverse;
+    .sobre-nosotros {
+        flex-direction: column-reverse;
+    }
 }
-}
+
 /* NUESTRAS INTALACIONES*/
 .nuestras-instalaciones {
     /* Estilo para el contenedor principal de la sección "Nuestras Instalaciones" */
-    display: flex; /* Establece el contenedor como un flexbox */
-    height: 60rem; /* Establece una altura fija de 60rem */
-    margin-top: 10rem; /* Establece un margen superior de 10rem */
+    display: flex;
+    /* Establece el contenedor como un flexbox */
+    height: 60rem;
+    /* Establece una altura fija de 60rem */
+    margin-top: 10rem;
+    /* Establece un margen superior de 10rem */
 }
 
 .box2-2 {
     /* Estilo para la segunda caja dentro de la sección */
-    background-image: url(/images/instalaciones.jfif); /* Establece una imagen de fondo */
-    background-position: right center; /* Posición de la imagen de fondo */
-    background-repeat: no-repeat; /* No se repite la imagen de fondo */
-    background-size: cover; /* Ajusta la imagen de fondo para cubrir completamente */
-    height: 25rem; /* Altura fija de la caja */
-    flex-basis: 60%; /* Establece el tamaño base flexible al 60% del contenedor */
-    height: 100%; /* Establece una altura del 100% (repetida, se podría eliminar) */
+    background-image: url(/images/instalaciones.jfif);
+    /* Establece una imagen de fondo */
+    background-position: right center;
+    /* Posición de la imagen de fondo */
+    background-repeat: no-repeat;
+    /* No se repite la imagen de fondo */
+    background-size: cover;
+    /* Ajusta la imagen de fondo para cubrir completamente */
+    height: 25rem;
+    /* Altura fija de la caja */
+    flex-basis: 60%;
+    /* Establece el tamaño base flexible al 60% del contenedor */
+    height: 100%;
+    /* Establece una altura del 100% (repetida, se podría eliminar) */
 }
 
 .box1-1 {
     /* Estilo para la primera caja dentro de la sección */
-    background-color: #C3D6E4; /* Color de fondo */
-    color: black; /* Color del texto */
-    text-align: justify; /* Alinea el texto justificado */
-    display: flex; /* Establece la caja como un flexbox */
-    flex-direction: column; /* Establece la dirección de los elementos hijos como columna */
-    justify-content: center; /* Centra verticalmente el contenido */
-    padding: 4rem; /* Espaciado interno de 4rem en todos los lados */
-    flex-basis: 50%; /* Establece el tamaño base flexible al 50% del contenedor */
-    height: 100%; /* Establece una altura del 100% (repetida, se podría eliminar) */
+    background-color: #C3D6E4;
+    /* Color de fondo */
+    color: black;
+    /* Color del texto */
+    text-align: justify;
+    /* Alinea el texto justificado */
+    display: flex;
+    /* Establece la caja como un flexbox */
+    flex-direction: column;
+    /* Establece la dirección de los elementos hijos como columna */
+    justify-content: center;
+    /* Centra verticalmente el contenido */
+    padding: 4rem;
+    /* Espaciado interno de 4rem en todos los lados */
+    flex-basis: 50%;
+    /* Establece el tamaño base flexible al 50% del contenedor */
+    height: 100%;
+    /* Establece una altura del 100% (repetida, se podría eliminar) */
 }
+
 /* estilo especial para moviles*/
 @media (max-width: 768px) {
-    .nuestras-instalaciones{
+    .nuestras-instalaciones {
         flex-direction: column;
     }
 }
+
 /*Nuestras soluciones y productos */
 .productos {
     display: flex;
@@ -318,13 +442,15 @@ a {
 }
 
 .producto {
-    width: calc(33.33% - 20px); /* Ajustar según el espacio disponible y el margen */
+    width: calc(33.33% - 20px);
+    /* Ajustar según el espacio disponible y el margen */
     margin-bottom: 2rem;
 }
 
 .imagen {
     width: 100%;
-    height: 200px; /* Altura deseada para todas las imágenes */
+    height: 200px;
+    /* Altura deseada para todas las imágenes */
     overflow: hidden;
 }
 
@@ -343,124 +469,176 @@ a {
     text-align: justify;
 }
 
-.boton{
+.boton {
     margin-top: 1rem;
-    background-color: #5b90b6; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    padding: 1rem 2rem; /* Espaciado interno del botón */
-    text-align: center; /* Alineación del texto */
-    text-decoration: none; /* Quita la subrayado por defecto en los enlaces */
-    border: none; /* Quita el borde del botón */
-    border-radius: 5px; /* Borde redondeado del botón */
+    background-color: #5b90b6;
+    /* Color de fondo del botón */
+    color: white;
+    /* Color del texto del botón */
+    padding: 1rem 2rem;
+    /* Espaciado interno del botón */
+    text-align: center;
+    /* Alineación del texto */
+    text-decoration: none;
+    /* Quita la subrayado por defecto en los enlaces */
+    border: none;
+    /* Quita el borde del botón */
+    border-radius: 5px;
+    /* Borde redondeado del botón */
     transition: background-color 0.3s;
 }
-.boton:hover{
+
+.boton:hover {
     background-color: rgb(24, 117, 179);
 }
+
 @media (max-width: 768px) {
     .productos {
-        flex-direction: column; /* Cambia la dirección de los elementos a columna */
-        align-items: center; /* Centra los elementos horizontalmente */
+        flex-direction: column;
+        /* Cambia la dirección de los elementos a columna */
+        align-items: center;
+        /* Centra los elementos horizontalmente */
     }
 
     .producto {
-        width: calc(100% - 40px); /* Ancho del 100% del contenedor menos el espacio del margen a ambos lados */
-        margin-bottom: 1rem; /* Reducir el margen inferior */
+        width: calc(100% - 40px);
+        /* Ancho del 100% del contenedor menos el espacio del margen a ambos lados */
+        margin-bottom: 1rem;
+        /* Reducir el margen inferior */
     }
 
     .descripcion {
         padding: 10px;
-        text-align: center; /* Alinea el texto al centro */
+        text-align: center;
+        /* Alinea el texto al centro */
     }
 }
+
 /* FOOTTER*/
-#logo-fotter{
+#logo-fotter {
     /* Establece el tamaño deseado para el logo */
-    width: 2.5rem; /* Ancho deseado */
-    height: 2.5rem; /* Altura deseada */
+    width: 2.5rem;
+    /* Ancho deseado */
+    height: 2.5rem;
+    /* Altura deseada */
 }
 
-footer{
+footer {
     /* Estilo para el pie de página */
-    width: 100%; /* Ancho del 100% del contenedor padre */
-    padding: 5rem 0px; /* Espaciado interno de 5rem arriba y abajo, 0px a los lados */
-    background-image: url(background-footer.svg); /* Establece la imagen de fondo */
-    background-size: cover; /* Escala la imagen de fondo para cubrir completamente */
+    width: 100%;
+    /* Ancho del 100% del contenedor padre */
+    padding: 5rem 0px;
+    /* Espaciado interno de 5rem arriba y abajo, 0px a los lados */
+    background-image: url(background-footer.svg);
+    /* Establece la imagen de fondo */
+    background-size: cover;
+    /* Escala la imagen de fondo para cubrir completamente */
 }
 
-.container-footer{
+.container-footer {
     /* Estilo para el contenedor del pie de página */
-    display: flex; /* Establece el contenedor como un flexbox */
-    flex-wrap: row; /* Permite que los elementos se envuelvan en varias líneas si es necesario */
-    justify-content: space-between; /* Distribuye los elementos de manera uniforme en el contenedor */
-    max-width: 150rem; /* Establece el ancho máximo del contenedor */
-    margin: auto; /* Centra el contenedor horizontalmente */
-    margin-top: 10rem; /* Margen superior de 10rem */
+    display: flex;
+    /* Establece el contenedor como un flexbox */
+    flex-wrap: row;
+    /* Permite que los elementos se envuelvan en varias líneas si es necesario */
+    justify-content: space-between;
+    /* Distribuye los elementos de manera uniforme en el contenedor */
+    max-width: 150rem;
+    /* Establece el ancho máximo del contenedor */
+    margin: auto;
+    /* Centra el contenedor horizontalmente */
+    margin-top: 10rem;
+    /* Margen superior de 10rem */
 }
+
 @media (max-width: 768px) {
-    .container-footer{
+    .container-footer {
         flex-direction: column;
     }
 }
-.box-footer{
+
+.box-footer {
     /* Estilo para las cajas del pie de página */
-    display: flex; /* Establece la caja como un flexbox */
-    flex-direction: column; /* Establece la dirección de los elementos como columna */
-    padding: 4rem; /* Espaciado interno de 4rem en todos los lados */
+    display: flex;
+    /* Establece la caja como un flexbox */
+    flex-direction: column;
+    /* Establece la dirección de los elementos como columna */
+    padding: 4rem;
+    /* Espaciado interno de 4rem en todos los lados */
 }
 
-.box-footer .logo img{
+.box-footer .logo img {
     /* Estilo para las imágenes de los logos dentro de las cajas del pie de página */
-    width: 18rem; /* Ancho de la imagen */
+    width: 18rem;
+    /* Ancho de la imagen */
 }
 
-.box-footer h2{
+.box-footer h2 {
     /* Estilo para los títulos dentro de las cajas del pie de página */
-    margin-bottom: 3rem; /* Margen inferior de 3rem */
-    color: #343434; /* Color del texto */
-    font-weight: 700; /* Peso de la fuente */
+    margin-bottom: 3rem;
+    /* Margen inferior de 3rem */
+    color: #343434;
+    /* Color del texto */
+    font-weight: 700;
+    /* Peso de la fuente */
 }
 
-.box-footer a{
+.box-footer a {
     /* Estilo para los enlaces dentro de las cajas del pie de página */
-    margin-top: 1rem; /* Margen superior de 1rem */
-    color: #7a7a7a; /* Color del texto */
-    font-weight: 600; /* Peso de la fuente */
-    font-size: 2rem; /* Tamaño de la fuente */
+    margin-top: 1rem;
+    /* Margen superior de 1rem */
+    color: #7a7a7a;
+    /* Color del texto */
+    font-weight: 600;
+    /* Peso de la fuente */
+    font-size: 2rem;
+    /* Tamaño de la fuente */
 }
 
-.box-footer a:hover{
+.box-footer a:hover {
     /* Estilo para los enlaces cuando se hace hover sobre ellos */
-    opacity: 0.8; /* Opacidad al 80% */
+    opacity: 0.8;
+    /* Opacidad al 80% */
 }
 
-.box-footer a .fab{
+.box-footer a .fab {
     /* Estilo para los íconos de fuentes dentro de los enlaces */
-    font-size: 2rem; /* Tamaño de la fuente */
+    font-size: 2rem;
+    /* Tamaño de la fuente */
 }
 
-.box-copyright{
+.box-copyright {
     /* Estilo para la caja de derechos de autor */
-    max-width: 120rem; /* Establece el ancho máximo de la caja */
-    margin: auto; /* Centra la caja horizontalmente */
-    text-align: center; /* Alinea el texto al centro */
-    padding: 0px 40px; /* Espaciado interno de 0px arriba y abajo, 4rem a los lados */
+    max-width: 120rem;
+    /* Establece el ancho máximo de la caja */
+    margin: auto;
+    /* Centra la caja horizontalmente */
+    text-align: center;
+    /* Alinea el texto al centro */
+    padding: 0px 40px;
+    /* Espaciado interno de 0px arriba y abajo, 4rem a los lados */
 }
 
-.box-copyright p{
+.box-copyright p {
     /* Estilo para los párrafos dentro de la caja de derechos de autor */
-    margin-top: 2rem; /* Margen superior de 2rem */
-    color: #7a7a7a; /* Color del texto */
+    margin-top: 2rem;
+    /* Margen superior de 2rem */
+    color: #7a7a7a;
+    /* Color del texto */
 }
 
-.contenedor-logo-link{
+.contenedor-logo-link {
     /* Estilo para el contenedor de logos y enlaces */
-    display: flex; /* Establece el contenedor como un flexbox */
-    flex-direction: row; /* Establece la dirección de los elementos como fila */
-    gap: 1rem; /* Espacio entre elementos de 1rem */
+    display: flex;
+    /* Establece el contenedor como un flexbox */
+    flex-direction: row;
+    /* Establece la dirección de los elementos como fila */
+    gap: 1rem;
+    /* Espacio entre elementos de 1rem */
 }
 
-#h2-opciones{
+#h2-opciones {
     /* Estilo para el título h2 con el id "h2-opciones" */
-    margin-left: -5.7rem; /* Desplazamiento hacia la izquierda de 5.7rem */
+    margin-left: -5.7rem;
+    /* Desplazamiento hacia la izquierda de 5.7rem */
 }

@@ -320,22 +320,27 @@ textarea {
     text-align: center;
     margin-top: 20px;
 }
+
 @media (max-width: 768px) {
-    .for-box1{
+    .for-box1 {
         flex-direction: column;
     }
-    .for-box4{
+
+    .for-box4 {
         flex-direction: column;
     }
-    .grupo1{
+
+    .grupo1 {
         flex-direction: column;
     }
-    .grupo1-1{
+
+    .grupo1-1 {
         display: flex;
         flex-direction: row;
 
     }
-    .grup1{
+
+    .grup1 {
         flex-direction: column;
     }
 }
