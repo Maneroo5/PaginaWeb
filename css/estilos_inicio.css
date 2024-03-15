@@ -13,7 +13,8 @@ body {
     font-family: "Times New Roman", sans-serif;
     font-size: 1.6rem;
     /*background: #d4e3fff3;*/
-    background-color: #F7FEF5;
+    background-color: #ffffff;
+
 
 }
 
@@ -72,7 +73,8 @@ a {
 
 /* NAV */
 .hero {
-    background-image: url('/imag/automatizacion'); 
+    margin-top: 20px;
+    background-image: url('/images/automatizacion.webp'); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -112,12 +114,13 @@ a {
     padding: 2rem;
     font-size: 2rem;
     transition: background-color .3s ease-out;
+    border-radius: 20px;
 }
 .navegador a:hover{
    /* background-color: #037bc0;*/
-    background-color: #A9F497;
+    background-color: #C3D6E4;
     color: white;
-    border-bottom-right-radius: 1rem;
+    border-radius: 20px;
 }
 /* NUESTROS VALORES */
 .nuestros-valores {
@@ -126,8 +129,8 @@ a {
     margin-top: 5rem;
 }
 .contenedor-cartas{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     gap: 2rem;
 }
 .value-card {
@@ -162,14 +165,12 @@ a {
 }
 
 .value-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    background-color: rgba(149, 190, 250, 0.8);
     padding: 20px;
     opacity: 0;
     transition: opacity 0.3s;
+    
 }
 
 .value-card:hover .value-content {
@@ -183,15 +184,22 @@ a {
 
 /* Imágenes de fondo */
 .value-card:nth-child(1) {
-    background-image: url('descarga.png');
+    background-image: url('/images/inovacion.jfif');
+    background-size: contain;
+
 }
 
 .value-card:nth-child(2) {
-    background-image: url('descarga.png');
+    background-image: url('/images/apretonmanos.jfif');
+    background-size: cover;
+    background-position: center;
 }
 
 .value-card:nth-child(3) {
-    background-image: url('imagen3.jpg');
+    background-image: url('/images/diversidad.jfif');
+    background-size: cover;
+    background-position: center;
+
 }
 /* SOBRE NOSOSTROS*/
 .sobre-nosotros {
@@ -202,7 +210,7 @@ a {
 }
 
 .box1 {
-    background-image: url(descarga.png);
+    background-image: url(/images/quienessomos.jpg);
     background-position: left center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -212,8 +220,8 @@ a {
 }
 
 .box2 {
-    background-color: #617CEE;
-    color: white;
+    background-color: #C3D6E4;
+    color: black;
     text-align: justify;
     display: flex;
     flex-direction: column;
@@ -233,7 +241,7 @@ a {
 }
 
 .box2-2 {
-    background-image: url(descarga.png);
+    background-image: url(/images/instalaciones.jfif);
     background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -243,8 +251,8 @@ a {
 }
 
 .box1-1 {
-    background-color: #617CEE;
-    color: white;
+    background-color: #C3D6E4;
+    color: black;
     text-align: justify;
     display: flex;
     flex-direction: column;
@@ -254,51 +262,134 @@ a {
     height: 100%;
     
 }
-/*Nuestras soluciones */
-.product-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
+/*Nuestras soluciones y productos */
+.productos {
+    display: flex;
+    justify-content: space-between;
 }
 
-.product {
-    padding: 15px;
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.producto {
+    width: calc(33.33% - 20px); /* Ajustar según el espacio disponible y el margen */
+    margin-bottom: 20px;
 }
 
-.product img {
-    max-width: 100%;
+.imagen {
+    width: 100%;
+    height: 200px; /* Altura deseada para todas las imágenes */
+    overflow: hidden;
+}
+
+.imagen img {
+    width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
-.product-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.product-description {
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.product-price {
-    font-size: 16px;
-    font-weight: bold;
-    color: green;
-    margin-bottom: 10px;
-}
-
-.more-info-button {
-    background-color: #4CAF50;
-    color: white;
+.descripcion {
     padding: 10px;
+    background-color: #C3D6E4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.boton{
+    margin-top: 10px;
+    background-color: #5b90b6; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Quita la subrayado por defecto en los enlaces */
+    border: none; /* Quita el borde del botón */
+    border-radius: 5px; /* Borde redondeado del botón */
+    transition: background-color 0.3s;
+}
+.boton:hover{
+    background-color: rgb(24, 117, 179);
+}
+
+/* FOOTTER*/
+#logo-fotter{
+    width: 25px; /* Ancho deseado */
+    height: 25px; /* Altura deseada */
+}
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(background-footer.svg);
+    background-size: cover;
+    
+    /*background-color: #d0f0f8;
+    -webkit-mask-image: url("../Images/background-footer.svg");
+    mask-image: url("../Images/background-footer.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;*/
+}
+
+.container-footer{
+    display: flex;
+    flex-wrap: row;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box-footer .logo img{
+    width: 180px;
+}
+
+.box-footer h2{
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
+}
+
+.box-footer a{
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.box-footer a:hover{
+    opacity: 0.8;
+}
+
+.box-footer a .fab{
+    font-size: 20px;
+}
+
+.box-copyright{
+    max-width: 1200px;
+    margin: auto;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    cursor: pointer;
+    padding: 0px 40px;
+}
+
+.box-copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box-copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+.contenedor-logo-link{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#h2-opciones{
+    margin-left: -57px;
 }
