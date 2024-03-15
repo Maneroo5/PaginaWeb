@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
-    font-size: 62.5%;/*1 rem son 10pixels, utilizamos rem como medida */
+    font-size: 62.5%;
+    /*1 rem son 10pixels, utilizamos rem como medida */
 }
 
 *,
@@ -8,14 +9,12 @@ html {
 *:after {
     box-sizing: inherit;
 }
-/* GLOBALES */
+
+/* VARIABLES GLOBALES */
 body {
     font-family: "Times New Roman", sans-serif;
     font-size: 1.6rem;
-    /*background: #d4e3fff3;*/
     background-color: #ffffff;
-
-
 }
 
 img {
@@ -23,50 +22,55 @@ img {
     display: block;
 }
 
+/* estilos para los titulos*/
 h1,
 h2,
 h3 {
-    font-family: "Playfair Display", serif;
+    font-family: Comic, serif;
 }
 
 h1 {
-    font-size: 4rem;
-}
-
-@media (min-width: 768px) {
-    h1 {
-        font-size: 5rem;
-    }
+    font-size: 5rem;
 }
 
 h2 {
-    font-size: 3.2rem;
     text-align: center;
+    font-size: 4rem;
 }
 
-@media (min-width: 768px) {
-    h2 {
+h3 {
+    font-size: 3rem;
+}
+
+/* estilo especial para moviles*/
+@media (max-width: 768px) {
+    h1 {
         font-size: 4rem;
     }
 }
 
-h3 {
-    font-size: 2.4rem;
-    margin: 0 0 0.5px 0;
+@media (max-width: 768px) {
+    h2 {
+        font-size: 3.1rem;
+        text-align: center;
+    }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     h3 {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        margin: 0 0 0.5px 0;
     }
 }
 
 a {
+    /* estilo predetermonado para los enlaces*/
     text-decoration: none;
     color: #000
 }
 
 .contenedor {
+    /*estilo del contenedor "padre"*/
     max-width: 130rem;
     margin-inline: auto;
 }
@@ -74,136 +78,193 @@ a {
 /* NAV */
 .header {
     /* Estilo para el encabezado */
-    text-align: center; /* Alinea el texto al centro */
-    color: #333; /* Color del texto */
+    text-align: center;
+    /* Alinea el texto al centro */
+    color: #333;
+    /* Color del texto */
 }
 
 .titulo {
     /* Estilo para el título */
-    font-size: 5rem; /* Tamaño de fuente de 5rem */
-    margin: 10; /* Margen de 10 (unidad no especificada, generalmente se utiliza px) */
-    padding: 2rem; /* Espaciado interno de 2rem */
-    background-color: #C3D6E4; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    border-radius: 5rem; /* Borde redondeado de 5rem */
-    display: inline-block; /* Muestra el título como un bloque en línea */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra */
+    font-size: 5rem;
+    /* Tamaño de fuente de 5rem */
+    margin: 10;
+    /* Margen de 10 (unidad no especificada, generalmente se utiliza px) */
+    padding: 2rem;
+    /* Espaciado interno de 2rem */
+    background-color: #C3D6E4;
+    /* Color de fondo */
+    color: #fff;
+    /* Color del texto */
+    border-radius: 5rem;
+    /* Borde redondeado de 5rem */
+    display: inline-block;
+    /* Muestra el título como un bloque en línea */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Agrega una sombra */
 }
 
 .navegador {
     /* Estilo para el navegador */
-    padding: 2rem 0 2rem 0; /* Espaciado interno */
-    display: flex; /* Establece el navegador como un flexbox */
-    align-items: center; /* Alinea los elementos al centro verticalmente */
-    flex-direction: row; /* Establece la dirección de los elementos como fila */
-    justify-content: space-between; /* Distribuye los elementos de manera uniforme en el contenedor */
+    padding: 2rem 0 2rem 0;
+    /* Espaciado interno */
+    display: flex;
+    /* Establece el navegador como un flexbox */
+    align-items: center;
+    /* Alinea los elementos al centro verticalmente */
+    flex-direction: row;
+    /* Establece la dirección de los elementos como fila */
+    justify-content: space-between;
+    /* Distribuye los elementos de manera uniforme en el contenedor */
 }
 
 .contenedor-navegacion {
     /* Estilo para el contenedor de navegación */
-    border-top: 1px solid #e1e1e1; /* Borde superior de 1px sólido */
-    border-bottom: 1px solid #e1e1e1; /* Borde inferior de 1px sólido */
+    border-top: 1px solid #e1e1e1;
+    /* Borde superior de 1px sólido */
+    border-bottom: 1px solid #e1e1e1;
+    /* Borde inferior de 1px sólido */
 }
 
-.navegador a{
+.navegador a {
     /* Estilo para los enlaces dentro del navegador */
-    text-align: center; /* Alinea el texto al centro */
-    display: block; /* Muestra los enlaces como bloques */
-    padding: 2rem; /* Espaciado interno de 2rem */
-    font-size: 2rem; /* Tamaño de fuente de 2rem */
-    transition: background-color .3s ease-out; /* Transición suave de 0.3 segundos en el color de fondo */
-    border-radius: 2rem; /* Borde redondeado de 2rem */
+    text-align: center;
+    /* Alinea el texto al centro */
+    display: block;
+    /* Muestra los enlaces como bloques */
+    padding: 2rem;
+    /* Espaciado interno de 2rem */
+    font-size: 2rem;
+    /* Tamaño de fuente de 2rem */
+    transition: background-color .3s ease-out;
+    /* Transición suave de 0.3 segundos en el color de fondo */
+    border-radius: 2rem;
+    /* Borde redondeado de 2rem */
 }
+
 @media (max-width: 768px) {
     .navegador {
         /* Estilo para el navegador */
-        padding: 2rem 0 2rem 0; /* Espaciado interno */
-        display: flex; /* Establece el navegador como un flexbox */
-        align-items: center; /* Alinea los elementos al centro verticalmente */
-        flex-direction: column; /* Establece la dirección de los elementos como fila */
-        justify-content: space-between; /* Distribuye los elementos de manera uniforme en el contenedor */
+        padding: 2rem 0 2rem 0;
+        /* Espaciado interno */
+        display: flex;
+        /* Establece el navegador como un flexbox */
+        align-items: center;
+        /* Alinea los elementos al centro verticalmente */
+        flex-direction: column;
+        /* Establece la dirección de los elementos como fila */
+        justify-content: space-between;
+        /* Distribuye los elementos de manera uniforme en el contenedor */
     }
 
 }
 
-.navegador a:hover{
+.navegador a:hover {
     /* Estilo para los enlaces cuando se hace hover sobre ellos */
-    background-color: #C3D6E4; /* Cambia el color de fondo */
-    color: white; /* Cambia el color del texto */
-    border-radius: 2rem; /* Mantiene el borde redondeado de 2rem */
-} 
+    background-color: #C3D6E4;
+    /* Cambia el color de fondo */
+    color: white;
+    /* Cambia el color del texto */
+    border-radius: 2rem;
+    /* Mantiene el borde redondeado de 2rem */
+}
 
 /* PRODUCTOS */
 main {
     /* Estilo para el contenedor principal */
-    display: flex; /* Establece el contenedor como un flexbox */
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas si es necesario */
+    display: flex;
+    /* Establece el contenedor como un flexbox */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en varias líneas si es necesario */
 }
 
 .producto {
     /* Estilo para los elementos de producto */
-    width: calc(33.33% - 20px); /* Calcula el ancho del producto como el 33.33% del contenedor menos 20px de margen */
-    margin: 10px; /* Margen exterior de 10px */
-    border: 1px solid #ccc; /* Borde de 1px sólido con color #ccc */
-    padding: 10px; /* Espaciado interno de 10px */
-    display: flex; /* Establece el producto como un flexbox */
-    width: 100%; /* Establece el ancho del 100% */
+    width: calc(33.33% - 20px);
+    /* Calcula el ancho del producto como el 33.33% del contenedor menos 20px de margen */
+    margin: 10px;
+    /* Margen exterior de 10px */
+    border: 1px solid #ccc;
+    /* Borde de 1px sólido con color #ccc */
+    padding: 10px;
+    /* Espaciado interno de 10px */
+    display: flex;
+    /* Establece el producto como un flexbox */
+    width: 100%;
+    /* Establece el ancho del 100% */
 }
 
 .imagen {
     /* Estilo para la parte de imagen del producto */
-    width: 30%; /* Ancho del 30% del contenedor */
+    width: 30%;
+    /* Ancho del 30% del contenedor */
 }
 
 .imagen img {
     /* Estilo para la imagen dentro de la parte de imagen */
-    width: 100%; /* Ancho del 100% */
-    height: auto; /* Altura automática para mantener la proporción */
+    width: 100%;
+    /* Ancho del 100% */
+    height: auto;
+    /* Altura automática para mantener la proporción */
 }
 
 .contenido {
     /* Estilo para la parte de contenido del producto */
-    width: 70%; /* Ancho del 70% del contenedor */
-    padding-left: 10px; /* Espaciado interno a la izquierda de 10px */
+    width: 70%;
+    /* Ancho del 70% del contenedor */
+    padding-left: 10px;
+    /* Espaciado interno a la izquierda de 10px */
 }
 
 .contenido h2 {
     /* Estilo para los títulos h2 dentro del contenido */
-    margin-top: 0; /* Elimina el margen superior */
+    margin-top: 0;
+    /* Elimina el margen superior */
 }
 
 .precio {
     /* Estilo para los precios dentro del producto */
-    font-weight: bold; /* Establece la negrita */
-    margin-top: 10px; /* Margen superior de 10px */
+    font-weight: bold;
+    /* Establece la negrita */
+    margin-top: 10px;
+    /* Margen superior de 10px */
 }
 
 table {
     /* Estilo para las tablas */
-    width: 100%; /* Ancho del 100% */
-    border-collapse: collapse; /* Colapsa los bordes de la tabla */
-    margin-top: 10px; /* Margen superior de 10px */
+    width: 100%;
+    /* Ancho del 100% */
+    border-collapse: collapse;
+    /* Colapsa los bordes de la tabla */
+    margin-top: 10px;
+    /* Margen superior de 10px */
 }
 
-table, td {
+table,
+td {
     /* Estilo para la tabla y las celdas */
-    border: 1px solid #ccc; /* Borde de 1px sólido con color #ccc */
+    border: 1px solid #ccc;
+    /* Borde de 1px sólido con color #ccc */
 }
 
 td {
     /* Estilo para las celdas */
-    padding: 8px; /* Espaciado interno de 8px */
-    text-align: left; /* Alineación del texto a la izquierda */
+    padding: 8px;
+    /* Espaciado interno de 8px */
+    text-align: left;
+    /* Alineación del texto a la izquierda */
 }
 
 tr:nth-child(even) {
     /* Estilo para las filas pares */
-    background-color: #f2f2f2; /* Color de fondo gris claro */
+    background-color: #f2f2f2;
+    /* Color de fondo gris claro */
 }
 
 tr:nth-child(odd) {
     /* Estilo para las filas impares */
-    background-color: #dddddd; /* Color de fondo gris */
+    background-color: #dddddd;
+    /* Color de fondo gris */
 }
 
 /* FOOTTER*/
@@ -230,7 +291,11 @@ footer{
     margin: auto; /* Centra el contenedor horizontalmente */
     margin-top: 10rem; /* Margen superior de 10rem */
 }
-
+@media (max-width: 768px) {
+    .container-footer{
+        flex-direction: column;
+    }
+}
 .box-footer{
     /* Estilo para las cajas del pie de página */
     display: flex; /* Establece la caja como un flexbox */
