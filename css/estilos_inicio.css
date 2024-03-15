@@ -26,38 +26,40 @@ img {
 h1,
 h2,
 h3 {
-    font-family: "Playfair Display", serif;
+    font-family: Comic, serif;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     h1 {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 }
 
 h2 {
     font-size: 3.2rem;
     text-align: center;
+    font-size: 4rem;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     h2 {
-        font-size: 4rem;
+        font-size: 3.2rem;
+        text-align: center;
     }
 }
 
 h3 {
-    font-size: 2.4rem;
-    margin: 0 0 0.5px 0;
+    font-size: 3rem;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     h3 {
-        font-size: 3rem;
+        font-size: 2.4rem;
+        margin: 0 0 0.5px 0;
     }
 }
 
@@ -73,130 +75,159 @@ a {
 
 /* NAV */
 .hero {
-    margin-top: 20px;
-    background-image: url('/images/automatizacion.webp'); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 55rem;
+    /* Estilo para el héroe */
+    margin-top: 2rem; /* Margen superior de 2rem */
+    background-image: url('/images/automatizacion.webp'); /* Establece la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-size: cover; /* Escala la imagen de fondo para cubrir completamente */
+    background-position: center center; /* Posiciona la imagen de fondo en el centro */
+    height: 55rem; /* Altura de 55rem */
+}
+.header {
+    /* Estilo para el encabezado */
+    text-align: center; /* Alinea el texto al centro */
+    color: #333; /* Color del texto */
 }
 
-.header {
-    text-align: center;
-    color: #333;
-}
 .titulo {
-    font-size: 5rem;
-    margin: 10;
-    padding: 20px;
-   /* background-color: #3498db;*/
-    background-color: #C3D6E4;
-    color: #fff;
-    border-radius: 50px;
-    display: inline-block;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Estilo para el título */
+    font-size: 5rem; /* Tamaño de fuente de 5rem */
+    margin: 10; /* Margen de 10 (unidad no especificada, generalmente se utiliza px) */
+    padding: 2rem; /* Espaciado interno de 2rem */
+    background-color: #C3D6E4; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border-radius: 5rem; /* Borde redondeado de 5rem */
+    display: inline-block; /* Muestra el título como un bloque en línea */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra */
 }
 
 .navegador {
-    padding: 2rem 0 2rem 0;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
+    /* Estilo para el navegador */
+    padding: 2rem 0 2rem 0; /* Espaciado interno */
+    display: flex; /* Establece el navegador como un flexbox */
+    align-items: center; /* Alinea los elementos al centro verticalmente */
+    flex-direction: row; /* Establece la dirección de los elementos como fila */
+    justify-content: space-between; /* Distribuye los elementos de manera uniforme en el contenedor */
 }
-.contenedor-navegacion {
-    border-top: 1px solid #e1e1e1;
-    border-bottom: 1px solid #e1e1e1;
-}
-.navegador a{
-    text-align: center;
-    display: block;
-    padding: 2rem;
-    font-size: 2rem;
-    transition: background-color .3s ease-out;
-    border-radius: 20px;
-}
-.navegador a:hover{
-   /* background-color: #037bc0;*/
-    background-color: #C3D6E4;
-    color: white;
-    border-radius: 20px;
-}
-/* NUESTROS VALORES */
-.nuestros-valores {
-    /*display: flex;*/
-    height: 50rem;
-    margin-top: 5rem;
-}
-.contenedor-cartas{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-}
-.value-card {
-    width: 100%;
-    margin: 20px;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    flex-direction: row;
+@media (max-width: 768px) {
+    .navegador {
+        /* Estilo para el navegador */
+        padding: 2rem 0 2rem 0; /* Espaciado interno */
+        display: flex; /* Establece el navegador como un flexbox */
+        align-items: center; /* Alinea los elementos al centro verticalmente */
+        flex-direction: column; /* Establece la dirección de los elementos como fila */
+        justify-content: space-between; /* Distribuye los elementos de manera uniforme en el contenedor */
+    }
+
 }
 
+.contenedor-navegacion {
+    /* Estilo para el contenedor de navegación */
+    border-top: 1px solid #e1e1e1; /* Borde superior de 1px sólido */
+    border-bottom: 1px solid #e1e1e1; /* Borde inferior de 1px sólido */
+}
+
+.navegador a{
+    /* Estilo para los enlaces dentro del navegador */
+    text-align: center; /* Alinea el texto al centro */
+    display: block; /* Muestra los enlaces como bloques */
+    padding: 2rem; /* Espaciado interno de 2rem */
+    font-size: 2rem; /* Tamaño de fuente de 2rem */
+    transition: background-color .3s ease-out; /* Transición suave de 0.3 segundos en el color de fondo */
+    border-radius: 2rem; /* Borde redondeado de 2rem */
+}
+
+.navegador a:hover{
+    /* Estilo para los enlaces cuando se hace hover sobre ellos */
+    background-color: #C3D6E4; /* Cambia el color de fondo */
+    color: white; /* Cambia el color del texto */
+    border-radius: 2rem; /* Mantiene el borde redondeado de 2rem */
+} 
+/* NUESTROS VALORES */
+.nuestros-valores {
+    /* Estilo para el contenedor de valores */
+    /* La siguiente línea está comentada: display: flex; */
+    height: 50rem; /* Establece una altura de 50rem */
+    margin-top: 5rem; /* Establece un margen superior de 5rem */
+}
+
+.contenedor-cartas{
+    /* Estilo para el contenedor de las cartas */
+    display: flex; /* Establece el contenedor como un flexbox */
+    flex-direction: row; /* Establece la dirección de los elementos como fila */
+    gap: 2rem; /* Establece un espacio entre elementos de 2rem */
+}
+
+.value-card {
+    /* Estilo para las tarjetas de valores */
+    width: 100%; /* Ancho del 100% del contenedor padre */
+    margin: 2rem; /* Margen exterior de 2rem */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir completamente */
+    position: relative; /* Establece posición relativa para posicionamiento absoluto de hijos */
+    overflow: hidden; /* Oculta el desbordamiento de los elementos hijos */
+    border-radius: 8px; /* Establece un borde redondeado de 8px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra */
+    transition: transform 0.3s; /* Transición suave de 0.3 segundos en la propiedad transform */
+    flex-direction: row; /* Establece la dirección de los elementos hijos como fila */
+}
 .value-card:hover {
-    transform: scale(1.05);
+    /* Estilo para cuando se hace hover sobre la tarjeta */
+    transform: scale(1.05); /* Escala la tarjeta al 105% de su tamaño original */
 }
 
 .value-card::before {
-    content: "";
-    display: block;
-    padding-top: 75%; /* Aspect ratio 4:3 */
+    /* Estilo para el seudoelemento ::before */
+    content: ""; /* Agrega un contenido vacío */
+    display: block; /* Convierte el seudoelemento en un elemento de bloque */
+    padding-top: 75%; /* Proporción para mantener el aspecto de relación 4:3 */
 }
 
 .value-card img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    /* Estilo para la imagen dentro de la tarjeta */
+    position: absolute; /* Establece posición absoluta para la imagen */
+    top: 0; /* Coloca la imagen en la parte superior de su contenedor */
+    left: 0; /* Coloca la imagen en la parte izquierda de su contenedor */
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+    height: 100%; /* Establece la altura de la imagen al 100% del contenedor */
+    object-fit: cover; /* Escala la imagen para cubrir todo el contenedor manteniendo su relación de aspecto */
 }
 
 .value-content {
-    text-align: center;
-    background-color: rgba(149, 190, 250, 0.8);
-    padding: 20px;
-    opacity: 0;
-    transition: opacity 0.3s;
-    
+    /* Estilo para el contenido de los valores */
+    text-align: center; /* Alinea el texto al centro */
+    background-color: rgba(149, 190, 250, 0.8); /* Color de fondo con transparencia */
+    padding: 2rem; /* Espaciado interno de 2rem */
+    opacity: 0; /* Hace el contenido inicialmente invisible */
+    transition: opacity 0.3s; /* Transición suave de 0.3 segundos para la propiedad opacidad */
 }
 
 .value-card:hover .value-content {
-    opacity: 1;
+    /* Estilo para el contenido cuando se hace hover sobre la tarjeta */
+    opacity: 1; /* Hace el contenido visible */
 }
 
 .value-content p {
-    margin: 0;
-    color: #333;
+    /* Estilo para los párrafos dentro del contenido */
+    margin: 0; /* Elimina el margen de los párrafos */
+    color: #333; /* Establece el color del texto */
 }
 
 /* Imágenes de fondo */
 .value-card:nth-child(1) {
     background-image: url('/images/inovacion.jfif');
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
 
 }
 
 .value-card:nth-child(2) {
-    background-image: url('/images/apretonmanos.jfif');
+    background-image: url('/images/apretonmanos.webp');
     background-size: cover;
     background-position: center;
 }
 
 .value-card:nth-child(3) {
-    background-image: url('/images/diversidad.jfif');
+    background-image: url('/images/diversidad.jpg');
     background-size: cover;
     background-position: center;
 
@@ -270,7 +301,7 @@ a {
 
 .producto {
     width: calc(33.33% - 20px); /* Ajustar según el espacio disponible y el margen */
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .imagen {
@@ -295,10 +326,10 @@ a {
 }
 
 .boton{
-    margin-top: 10px;
+    margin-top: 1rem;
     background-color: #5b90b6; /* Color de fondo del botón */
     color: white; /* Color del texto del botón */
-    padding: 10px 20px; /* Espaciado interno del botón */
+    padding: 1rem 2rem; /* Espaciado interno del botón */
     text-align: center; /* Alineación del texto */
     text-decoration: none; /* Quita la subrayado por defecto en los enlaces */
     border: none; /* Quita el borde del botón */
@@ -308,88 +339,106 @@ a {
 .boton:hover{
     background-color: rgb(24, 117, 179);
 }
+@media (max-width: 768px) {
+    .productos {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
 
+    .producto {
+        width: calc(100% - 40px); /* Ancho del 100% del contenedor menos el espacio del margen a ambos lados */
+        margin-bottom: 1rem; /* Reducir el margen inferior */
+    }
+
+    .descripcion {
+        padding: 10px;
+        text-align: center; /* Alinea el texto al centro */
+    }
+}
 /* FOOTTER*/
 #logo-fotter{
-    width: 25px; /* Ancho deseado */
-    height: 25px; /* Altura deseada */
+    /* Establece el tamaño deseado para el logo */
+    width: 2.5rem; /* Ancho deseado */
+    height: 2.5rem; /* Altura deseada */
 }
+
 footer{
-    width: 100%;
-    padding: 50px 0px;
-    background-image: url(background-footer.svg);
-    background-size: cover;
-    
-    /*background-color: #d0f0f8;
-    -webkit-mask-image: url("../Images/background-footer.svg");
-    mask-image: url("../Images/background-footer.svg");
-    -webkit-mask-size: cover;
-    mask-size: cover;*/
+    /* Estilo para el pie de página */
+    width: 100%; /* Ancho del 100% del contenedor padre */
+    padding: 5rem 0px; /* Espaciado interno de 5rem arriba y abajo, 0px a los lados */
+    background-image: url(background-footer.svg); /* Establece la imagen de fondo */
+    background-size: cover; /* Escala la imagen de fondo para cubrir completamente */
 }
 
 .container-footer{
-    display: flex;
-    flex-wrap: row;
-    justify-content: space-between;
-    max-width: 1500px;
-    margin: auto;
-    margin-top: 100px;
+    /* Estilo para el contenedor del pie de página */
+    display: flex; /* Establece el contenedor como un flexbox */
+    flex-wrap: row; /* Permite que los elementos se envuelvan en varias líneas si es necesario */
+    justify-content: space-between; /* Distribuye los elementos de manera uniforme en el contenedor */
+    max-width: 150rem; /* Establece el ancho máximo del contenedor */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    margin-top: 10rem; /* Margen superior de 10rem */
 }
 
 .box-footer{
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
+    /* Estilo para las cajas del pie de página */
+    display: flex; /* Establece la caja como un flexbox */
+    flex-direction: column; /* Establece la dirección de los elementos como columna */
+    padding: 4rem; /* Espaciado interno de 4rem en todos los lados */
 }
 
 .box-footer .logo img{
-    width: 180px;
+    /* Estilo para las imágenes de los logos dentro de las cajas del pie de página */
+    width: 18rem; /* Ancho de la imagen */
 }
 
 .box-footer h2{
-    margin-bottom: 30px;
-    color: #343434;
-    font-weight: 700;
+    /* Estilo para los títulos dentro de las cajas del pie de página */
+    margin-bottom: 3rem; /* Margen inferior de 3rem */
+    color: #343434; /* Color del texto */
+    font-weight: 700; /* Peso de la fuente */
 }
 
 .box-footer a{
-    margin-top: 10px;
-    color: #7a7a7a;
-    font-weight: 600;
-    font-size: 20px;
+    /* Estilo para los enlaces dentro de las cajas del pie de página */
+    margin-top: 1rem; /* Margen superior de 1rem */
+    color: #7a7a7a; /* Color del texto */
+    font-weight: 600; /* Peso de la fuente */
+    font-size: 2rem; /* Tamaño de la fuente */
 }
 
 .box-footer a:hover{
-    opacity: 0.8;
+    /* Estilo para los enlaces cuando se hace hover sobre ellos */
+    opacity: 0.8; /* Opacidad al 80% */
 }
 
 .box-footer a .fab{
-    font-size: 20px;
+    /* Estilo para los íconos de fuentes dentro de los enlaces */
+    font-size: 2rem; /* Tamaño de la fuente */
 }
 
 .box-copyright{
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-    padding: 0px 40px;
+    /* Estilo para la caja de derechos de autor */
+    max-width: 120rem; /* Establece el ancho máximo de la caja */
+    margin: auto; /* Centra la caja horizontalmente */
+    text-align: center; /* Alinea el texto al centro */
+    padding: 0px 40px; /* Espaciado interno de 0px arriba y abajo, 4rem a los lados */
 }
 
 .box-copyright p{
-    margin-top: 20px;
-    color: #7a7a7a;
+    /* Estilo para los párrafos dentro de la caja de derechos de autor */
+    margin-top: 2rem; /* Margen superior de 2rem */
+    color: #7a7a7a; /* Color del texto */
 }
 
-.box-copyright hr{
-    border: none;
-    height: 1px;
-    background-color: #7a7a7a;
-}
 .contenedor-logo-link{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+    /* Estilo para el contenedor de logos y enlaces */
+    display: flex; /* Establece el contenedor como un flexbox */
+    flex-direction: row; /* Establece la dirección de los elementos como fila */
+    gap: 1rem; /* Espacio entre elementos de 1rem */
 }
 
 #h2-opciones{
-    margin-left: -57px;
+    /* Estilo para el título h2 con el id "h2-opciones" */
+    margin-left: -5.7rem; /* Desplazamiento hacia la izquierda de 5.7rem */
 }
